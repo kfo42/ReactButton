@@ -1,4 +1,4 @@
-package com.amrdeveloper.reactbutton;
+package com.kfo42.reactbutton;
 
 /**
  * Created by AmrDeveloper on 2/2/2018.
