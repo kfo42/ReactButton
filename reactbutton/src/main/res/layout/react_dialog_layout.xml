@@ -4,15 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/transparent"
-    android:orientation="horizontal"
-    android:weightSum="2">
+    android:orientation="horizontal">
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_weight="1"
-        android:weightSum="5">
+        android:layout_gravity="bottom|center">
         
         <ImageButton
             android:id="@+id/imgButtonOne"
@@ -46,43 +44,32 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_weight="1"
-        android:weightSum="5">
+        android:layout_gravity="bottom|center">
         
         <ImageButton
             android:id="@+id/imgButtonSix"
             style="@style/ReactImageButton"
-            android:src="@drawable/ic_like"
-            android:layout_weight="1"
-            android:layout_gravity="center_vertical"/>
+            android:src="@drawable/ic_like"/>
         
         <ImageButton
             android:id="@+id/imgButtonSeven"
             style="@style/ReactImageButton"
-            android:src="@drawable/ic_like"
-            android:layout_weight="1"
-            android:layout_gravity="center_vertical"/>
+            android:src="@drawable/ic_like"/>
         
          <ImageButton
             android:id="@+id/imgButtonEight"
             style="@style/ReactImageButton"
-            android:src="@drawable/ic_like"
-            android:layout_weight="1"
-            android:layout_gravity="center_vertical"/>
+            android:src="@drawable/ic_like"/>
          
          <ImageButton
             android:id="@+id/imgButtonNine"
             style="@style/ReactImageButton"
-            android:src="@drawable/ic_like"
-            android:layout_weight="1"
-            android:layout_gravity="center_vertical"/>
+            android:src="@drawable/ic_like"/>
         
          <ImageButton
             android:id="@+id/imgButtonTen"
             style="@style/ReactImageButton"
-            android:src="@drawable/ic_like"
-            android:layout_weight="1"
-            android:layout_gravity="center_vertical"/>
+            android:src="@drawable/ic_like"/>
     
     </LinearLayout>
     
