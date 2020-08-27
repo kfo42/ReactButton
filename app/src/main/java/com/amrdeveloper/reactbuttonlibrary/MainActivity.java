@@ -1,4 +1,4 @@
-package com.amrdeveloper.reactbuttonlibrary;
+package kfo42.reactbuttonlibrary;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
