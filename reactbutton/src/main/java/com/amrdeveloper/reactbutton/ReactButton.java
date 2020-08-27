@@ -1,4 +1,4 @@
-package com.amrdeveloper.reactbutton;
+package com.kfo42.reactbutton;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
