@@ -4,35 +4,86 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/transparent"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:weightSum="2">
 
-    <ImageButton
-        android:id="@+id/imgButtonOne"
-        style="@style/ReactImageButton"
-        android:src="@drawable/ic_like" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="5">
+        
+        <ImageButton
+            android:id="@+id/imgButtonOne"
+            style="@style/ReactImageButton"
+            android:src="@drawable/ic_like" />
 
-    <ImageButton
-        android:id="@+id/imgButtonTwo"
-        style="@style/ReactImageButton"
-        android:src="@drawable/ic_heart" />
+        <ImageButton
+            android:id="@+id/imgButtonTwo"
+            style="@style/ReactImageButton"
+            android:src="@drawable/ic_heart" />
 
-    <ImageButton
-        android:id="@+id/imgButtonThree"
-        style="@style/ReactImageButton"
-        android:src="@drawable/ic_happy" />
+        <ImageButton
+            android:id="@+id/imgButtonThree"
+            style="@style/ReactImageButton"
+            android:src="@drawable/ic_happy" />
 
-    <ImageButton
-        android:id="@+id/imgButtonFour"
-        style="@style/ReactImageButton"
-        android:src="@drawable/ic_surprise" />
+        <ImageButton
+            android:id="@+id/imgButtonFour"
+            style="@style/ReactImageButton"
+            android:src="@drawable/ic_surprise" />
 
-    <ImageButton
-        android:id="@+id/imgButtonFive"
-        style="@style/ReactImageButton"
-        android:src="@drawable/ic_sad" />
-
-    <ImageButton
-        android:id="@+id/imgButtonSix"
-        style="@style/ReactImageButton"
-        android:src="@drawable/ic_angry" />
+        <ImageButton
+            android:id="@+id/imgButtonFive"
+            style="@style/ReactImageButton"
+            android:src="@drawable/ic_sad" />
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="5">
+        
+        <ImageButton
+            android:id="@+id/imgButtonSix"
+            style="@style/ReactImageButton"
+            android:src="@drawable/ic_like"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"/>
+        
+        <ImageButton
+            android:id="@+id/imgButtonSeven"
+            style="@style/ReactImageButton"
+            android:src="@drawable/ic_like"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"/>
+        
+         <ImageButton
+            android:id="@+id/imgButtonEight"
+            style="@style/ReactImageButton"
+            android:src="@drawable/ic_like"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"/>
+         
+         <ImageButton
+            android:id="@+id/imgButtonNine"
+            style="@style/ReactImageButton"
+            android:src="@drawable/ic_like"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"/>
+        
+         <ImageButton
+            android:id="@+id/imgButtonTen"
+            style="@style/ReactImageButton"
+            android:src="@drawable/ic_like"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"/>
+    
+    </LinearLayout>
+    
 </LinearLayout>
