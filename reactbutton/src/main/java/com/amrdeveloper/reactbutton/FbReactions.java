@@ -25,3 +25,4 @@ final class FbReactions {
     static Reaction[] getReactions() {
         return reactions;
     }
+}
