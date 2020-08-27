@@ -146,8 +146,13 @@ public class ReactButton
         dialogBuilder.setView(dialogView);
         mReactAlertDialog = dialogBuilder.create();
         mReactAlertDialog.getWindow().setBackgroundDrawableResource(mReactDialogShape);
-
+        mReactAlertDialog.getWindow().setAttributes(0.0);
+        
+        Manager.LayoutParams lp = mReactAlertDialog.getWindow().getAttributes();  
+        lp.dimAmount = 0.0f; 
+        mReactAlertDialog.getWindow().setAttributes(lp);
         Window window = mReactAlertDialog.getWindow();
+        
         window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
 
         mReactAlertDialog.show();
