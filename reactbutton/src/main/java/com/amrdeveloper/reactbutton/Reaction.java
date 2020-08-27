@@ -1,4 +1,4 @@
-package com.amrdeveloper.reactbutton;
+package com.kfo42.reactbutton;
 
 /**
  * Model Class to save one React Attribute
