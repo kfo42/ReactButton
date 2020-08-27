@@ -46,11 +46,16 @@ public class ReactButton
     private ImageButton mImgButtonFour;
     private ImageButton mImgButtonFive;
     private ImageButton mImgButtonSix;
+    private ImageButton mImgButtonSeven;
+    private ImageButton mImgButtonEight;
+    private ImageButton mImgButtonNine;
+    private ImageButton mImgButtonTen;
+    
 
     /**
      * Number of Valid Reactions
      */
-    private static final int REACTIONS_NUMBER = 6;
+    private static final int REACTIONS_NUMBER = 10;
 
     /**
      * Array of ImagesButton to set any action for all
@@ -68,7 +73,7 @@ public class ReactButton
     private Reaction mCurrentReaction = mDefaultReaction;
 
     /**
-     * Array of six Reaction one for every ImageButton Icon
+     * Array of ten Reaction one for every ImageButton Icon
      */
     private Reaction[] mReactionPack = FbReactions.getReactions();
 
@@ -158,6 +163,11 @@ public class ReactButton
         mImgButtonFour = view.findViewById(R.id.imgButtonFour);
         mImgButtonFive = view.findViewById(R.id.imgButtonFive);
         mImgButtonSix = view.findViewById(R.id.imgButtonSix);
+        mImgButtonSeven = view.findViewById(R.id.imgButtonSeven);
+        mImgButtonEight = view.findViewById(R.id.imgButtonEight);
+        mImgButtonNine = view.findViewById(R.id.imgButtonNine);
+        mImgButtonTen = view.findViewById(R.id.imgButtonTen);
+
     }
 
     /**
@@ -170,7 +180,12 @@ public class ReactButton
         mReactImgArray[3] = mImgButtonFour;
         mReactImgArray[4] = mImgButtonFive;
         mReactImgArray[5] = mImgButtonSix;
+        mReactImgArray[6] = mImgButtonSeven;
+        mReactImgArray[7] = mImgButtonEight;
+        mReactImgArray[8] = mImgButtonNine;
+        mReactImgArray[9] = mImgButtonTen;
     }
+    
 
     /**
      * Set onClickListener For every Image Buttons on Reaction Dialog
@@ -182,6 +197,11 @@ public class ReactButton
         imgButtonSetListener(mImgButtonFour, 3);
         imgButtonSetListener(mImgButtonFive, 4);
         imgButtonSetListener(mImgButtonSix, 5);
+        imgButtonSetListener(mImgButtonSeven, 6);
+        imgButtonSetListener(mImgButtonEight, 7);
+        imgButtonSetListener(mImgButtonNine, 8);
+        imgButtonSetListener(mImgButtonTen, 9);
+        
     }
 
     /**
@@ -240,10 +260,10 @@ public class ReactButton
     }
 
     /**
-     * @param reactions : Array of six Reactions to update default six Reactions
+     * @param reactions : Array of ten Reactions to update default ten Reactions
      */
     public void setReactions(Reaction... reactions) {
-        //Assert that Reactions number is six
+        //Assert that Reactions number is ten
         if (reactions.length != REACTIONS_NUMBER)
             return;
         //Update array of library default reactions
